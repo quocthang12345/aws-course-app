@@ -3,6 +3,7 @@ version: 0.2
 phases:
   build:
     commands:
+      - exit 1
       - echo "Bat dau build luc $(date)"
       - mkdir -p dist
       - cp index.html dist/index.html
