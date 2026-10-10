@@ -1,0 +1,14 @@
+version: 0.2
+
+phases:
+  build:
+    commands:
+      - echo "Bat dau build luc $(date)"
+      - mkdir -p dist
+      - cp index.html dist/index.html
+      - echo "<!-- build $(date +%s) -->" >> dist/index.html
+
+artifacts:
+  files:
+    - '**/*'
+  base-directory: dist
